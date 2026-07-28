@@ -36,8 +36,8 @@ class Data:
         ('categorical_pipeline', cat_pipeline, cat_cols),
         ('numerical_pipeline', num_pipeline, num_cols) ])
 
-        preprocessed_data = preprocessor.fit_transform(X)
-        return preprocessed_data
+        # preprocessed_data = preprocessor.fit_transform(X)
+        return preprocessor
     # missing values
     
     # scaling
