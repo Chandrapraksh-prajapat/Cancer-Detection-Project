@@ -6,3 +6,5 @@ seaborn
 joblib
 mlflow
 flask
+streamlit
+requests

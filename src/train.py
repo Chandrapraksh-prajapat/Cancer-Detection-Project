@@ -13,6 +13,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.naive_bayes import MultinomialNB
 from xgboost import XGBClassifier
+from sklearn.pipeline import Pipeline
+
 #pip install xgboost
 PATH="data/Cancer_Data.csv"
 data =pd.read_csv(PATH)
@@ -44,6 +46,23 @@ for name, algo in models.items():
         algo.fit(X_train, y_train)
         
         y_pred = algo.predict(X_test)
+        
+        # print("Unique predictions:", set(y_pred))
+        # print("Prediction counts:")
+        # print(pd.Series(y_pred).value_counts())
+
+        # print("\nActual counts:")
+        # print(y_test.value_counts())
+
+
+
+        # print("\nFirst 20 Predictions:")
+        # print(y_pred[:20])
+
+        # print("\nFirst 20 Actual:")
+        # print(y_test.iloc[:20].values)
+        
+        
         # Here we are calculatiing the metrics of the model 
         acc_score = accuracy_score(y_test, y_pred)
         precision = precision_score(y_test, y_pred, pos_label='M')
