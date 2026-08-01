@@ -47,22 +47,7 @@ for name, algo in models.items():
         
         y_pred = algo.predict(X_test)
         
-        # print("Unique predictions:", set(y_pred))
-        # print("Prediction counts:")
-        # print(pd.Series(y_pred).value_counts())
 
-        # print("\nActual counts:")
-        # print(y_test.value_counts())
-
-
-
-        # print("\nFirst 20 Predictions:")
-        # print(y_pred[:20])
-
-        # print("\nFirst 20 Actual:")
-        # print(y_test.iloc[:20].values)
-        
-        
         # Here we are calculatiing the metrics of the model 
         acc_score = accuracy_score(y_test, y_pred)
         precision = precision_score(y_test, y_pred, pos_label='M')

@@ -9,8 +9,13 @@ import mlflow
 
 mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
+# model = mlflow.pyfunc.load_model(
+# model_uri="models:/Cancer_Detection_Model/1")
+
+# Run id  of best model :ffad0d30a3484f379f6709acf033f18d
+
 model = mlflow.pyfunc.load_model(
-model_uri="models:/Cancer_Detection_Model/1"
+    "mlruns/1/models/m-792749f364f54db490a5ac17a9324b71/artifacts"
 )
 
 class CancerData(BaseModel):

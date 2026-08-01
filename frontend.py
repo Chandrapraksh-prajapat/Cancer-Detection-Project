@@ -5,7 +5,7 @@ import requests
 # ---------------------------------------------------------
 # Config
 # ---------------------------------------------------------
-API_URL = "http://localhost:8000/predict"
+API_URL =  "http://cancer-backend:8000/predict"
 
 st.set_page_config(page_title="Cancer Detection App", layout="wide")
 
