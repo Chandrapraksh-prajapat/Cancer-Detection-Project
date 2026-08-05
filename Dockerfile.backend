@@ -12,8 +12,3 @@ EXPOSE 8000
 
 CMD ["uvicorn","main:app", "--host","0.0.0.0","--port","8000"]
 
-# API_URL = "http://cancer-backend:8000/predict" # change if backend is hosted elsewhere
-
-# model = mlflow.pyfunc.load_model(
-#     "mlruns/2/models/m-e2558af1e89c47d99ecb88d161cae3a6/artifacts"
-# )
