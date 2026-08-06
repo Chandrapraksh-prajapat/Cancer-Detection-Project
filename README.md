@@ -116,7 +116,7 @@ Move into the project directory
 cd Cancer-Detection-Project
 ```
 
-(Optional) Create a virtual environment
+Create a virtual environment
 
 ```bash
 python -m venv .venv
