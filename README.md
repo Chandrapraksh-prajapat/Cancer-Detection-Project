@@ -4,6 +4,7 @@
   <img src="images/cover.jpeg" alt="Project Overview" width="100%">
 </p>
 
+---
 An end-to-end Machine Learning project that predicts whether a breast tumor is **Benign (B)** or **Malignant (M)** using the Breast Cancer Wisconsin Dataset.
 
 The project demonstrates the complete workflow from data preprocessing and model training to model comparison, experiment tracking with MLflow, API development using FastAPI, frontend development with Streamlit, Docker containerization, and deployment on AWS EC2.
