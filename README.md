@@ -1,7 +1,7 @@
 # End-to-End Breast Cancer Detection using Machine Learning
 
 <p align="center">
-  <img src="images/cover.jpeg" alt="Project Overview" width="100%">
+  <img src="images/cover.jpeg" alt="Project Overview" width="60%">
 </p>
 
 An end-to-end Machine Learning project that predicts whether a breast tumor is **Benign (B)** or **Malignant (M)** using the Breast Cancer Wisconsin Dataset.
